@@ -1,0 +1,8 @@
+[package]
+
+name = "aoc-2016-rust"
+version = "0.0.1"
+authors = [ "Jurgen Kluft <jurgen.kluft@gmail.com>" ]
+
+[dependencies]
+num = "*"
