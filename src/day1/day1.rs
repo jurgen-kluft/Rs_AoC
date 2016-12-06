@@ -107,7 +107,10 @@ fn parse_steps(str: &str) -> i32 {
 }
 
 
-pub fn aoc_main() {
+pub fn aoc_main(run : bool) {
+    if run == false {
+        return;
+    }
     let path = Path::new("day1_input.txt");
     let path_str = path.display();
 
