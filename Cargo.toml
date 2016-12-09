@@ -6,3 +6,4 @@ authors = [ "Jurgen Kluft <jurgen.kluft@gmail.com>" ]
 
 [dependencies]
 num = "*"
+regex = "*"
