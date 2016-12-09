@@ -29,8 +29,19 @@ pub fn aoc_main(run: bool) {
     for (_, line) in buffered_file1.lines().enumerate() {
         let l = line.unwrap();
         
-        // 
-        let re = Regex::new(r"^([a-z]+)(-[a-z]+){2,4}-([0-9]+)\[[a-z]+\]$").unwrap();
+        let re = Regex::new(r"^([a-z-]+){2,4}-([0-9]+)\[([a-z]+)\]$").unwrap();
+        // Regex group 0: encrypted name
+        // Regex group 1: sector ID
+        // Regex group 2: checksum
+
+        // Take the checksum string and for every character count how many times they
+        // appear in the encrypted-name, push every count in an array.
+
+        // Iterate the array and every next element should be smaller or equal.
+        // If the element is smaller then the previous element then the character
+        // should be alphabetically higher. If equal then the characters do not
+        // matter.
+        
 
         println!("{}", l);
     }
